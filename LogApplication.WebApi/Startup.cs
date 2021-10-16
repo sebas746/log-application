@@ -1,3 +1,4 @@
+using LogApplication.WebApi.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,8 @@ namespace LogApplication.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LogApplication.WebApi", Version = "v1" });
             });
+
+            DependencyInjectionHelper.ConfigureDependencies(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
