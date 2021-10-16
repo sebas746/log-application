@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogApplication.WebApi", "LogApplication.WebApi\LogApplication.WebApi.csproj", "{73577985-B226-4F1B-B656-3C4F469B8403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73577985-B226-4F1B-B656-3C4F469B8403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73577985-B226-4F1B-B656-3C4F469B8403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73577985-B226-4F1B-B656-3C4F469B8403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73577985-B226-4F1B-B656-3C4F469B8403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29BCCE8C-4E0F-4BE7-A42B-BFBD6273D7AC}
+	EndGlobalSection
+EndGlobal
