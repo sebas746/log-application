@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using LogApplication.Core.Logger;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LogApplication.WebApi.Helpers
 {
@@ -9,6 +10,7 @@ namespace LogApplication.WebApi.Helpers
         public static void ConfigureDependencies(IServiceCollection services)
         {
             services.AddSingleton<Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Http.HttpContextAccessor>();
+            services.AddSingleton<ILoggerService, LoggerService>();
         }
     }
 }

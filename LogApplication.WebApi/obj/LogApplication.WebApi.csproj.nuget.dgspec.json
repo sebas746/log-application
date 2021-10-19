@@ -4,14 +4,14 @@
     "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj": {
+    "D:\\git\\Personal\\log-application\\LogApplication.Core\\LogApplication.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj",
-        "projectName": "LogApplication.WebApi",
-        "projectPath": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj",
+        "projectUniqueName": "D:\\git\\Personal\\log-application\\LogApplication.Core\\LogApplication.Core.csproj",
+        "projectName": "LogApplication.Core",
+        "projectPath": "D:\\git\\Personal\\log-application\\LogApplication.Core\\LogApplication.Core.csproj",
         "packagesPath": "C:\\Users\\SEBAS\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\obj\\",
+        "outputPath": "D:\\git\\Personal\\log-application\\LogApplication.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -49,6 +49,91 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.11, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj",
+        "projectName": "LogApplication.WebApi",
+        "projectPath": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\LogApplication.WebApi.csproj",
+        "packagesPath": "C:\\Users\\SEBAS\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\Personal\\log-application\\LogApplication.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SEBAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://proget.yleo.us/nuget/nuget/": {},
+          "https://youngliving.jfrog.io/artifactory/api/nuget/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\git\\Personal\\log-application\\LogApplication.Core\\LogApplication.Core.csproj": {
+                "projectPath": "D:\\git\\Personal\\log-application\\LogApplication.Core\\LogApplication.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

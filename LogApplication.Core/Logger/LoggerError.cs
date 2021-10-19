@@ -1,14 +1,17 @@
-﻿namespace LogApplication.Core.Logger
+﻿using NLog;
+
+namespace LogApplication.Core.Logger
 {
     public class LoggerError : ILoggerStrategy
     {
+        static ILogger _logger = LogManager.GetCurrentClassLogger();
         public LoggerError()
         {
         }
 
-        public void LoggerSource(string message)
+        public void LogMessage(string message)
         {
-            
+            _logger.Error(message);
         }
     }
 }

@@ -13,9 +13,9 @@
         /// Method that implements the strategy pattern for logging.
         /// </summary>
         /// <param name="message"></param>
-        public void Validate(string message)
+        public void LogMessage(string message)
         {
-            _loggerStrategy.LoggerSource(message);
+            _loggerStrategy.LogMessage(message);
         }
     }
 }

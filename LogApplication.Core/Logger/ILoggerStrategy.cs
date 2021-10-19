@@ -2,6 +2,6 @@
 {
     public interface ILoggerStrategy
     {
-        void LoggerSource(string message);
+        void LogMessage(string message);
     }
 }
