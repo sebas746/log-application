@@ -2,6 +2,6 @@
 {
     public interface ILoggerService
     {
-        void LogMessage(string message, string logType);
+        bool LogMessage(string message, string logType);
     }
 }

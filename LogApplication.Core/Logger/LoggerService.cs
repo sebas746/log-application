@@ -8,7 +8,7 @@ namespace LogApplication.Core.Logger
         {
         }
 
-        public void LogMessage(string message, string logType)
+        public bool LogMessage(string message, string logType)
         {
             switch(logType.ToUpper())
             {
@@ -25,9 +25,11 @@ namespace LogApplication.Core.Logger
                     logWarning.LogMessage(message);
                     break;
                 default:
-                    throw new NotImplementedException("Logging type not implemented");
+                    throw new ArgumentException("Logging type not implemented");
 
             }
+
+            return true;
         }
     }
 }
